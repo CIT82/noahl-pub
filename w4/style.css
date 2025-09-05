@@ -1,69 +1,37 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #afdede;
 }
 
 header {
-    margin: auto;
-    background-color: #9a9a9a;
-    padding: 1px 0;
+    background-color: #002394;
     color: #e5e5e5;
-    width: 70%;
+    padding: 10px 0;
 }
 
-details {
-    margin: auto;
-    margin-bottom: 24px;
-    margin-top: 8px;
-    width: 30%;
-    border: 2px solid #2b2b2b;
-    border-radius: 4px;
-    padding: 0.5em 0.5em 0;
-}
-
-summary {
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em;
-}
-
-details[open] {
-    padding: 0.5em;
-}
-
-details[open] summary {
-    border-bottom: 2px solid #2b2b2b;
-    margin-bottom: 0.5em;
-}
-
-ruby {
-    font-size: 36px;
+main {
+    margin: 15px;
+    padding: 15px;
+    background-color: #d1d1d1;
 }
 
 footer {
-    margin: auto;
-    background-color: #9a9a9a;
-    padding: 1px 0;
-    color: #e5e5e5;
-    width: 70%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    background-color: #11bce2;
+    color: white;
+    padding: 10px 0;
 }
 
-.headerBorder {
-    border: 4px #2b2b2b solid;
-    border-radius: 0px 0px 5px 5px;
+label {
+    display: block;
 }
 
-.footerBorder {
-    border: 4px #2b2b2b solid;
-    border-radius: 5px 5px 0px 0px;
+img {
+    display: inline;
+    width: 200px;
+}
+
+.outline {
+    border: 1px black solid;
 }
