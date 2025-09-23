@@ -21,7 +21,9 @@
     - [ ] Submitted Maps
 
 - [ ] Change Table Layout
-    - [ ] Sort by rank by default
+    - [x] Sort by rank by default
+    - [ ] Remove other sorting methods
+    - [ ] Change data tables styling
 
 ## Maps and Leaderboards
 ---
