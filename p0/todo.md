@@ -1,7 +1,7 @@
 ## General
 ---
 - [ ] Create Placeholder Data for Pages
-- [ ] Redesign Dashboard and Feature New Maps and such
+- [x] Redesign Dashboard and Feature New Maps and such
 - [ ] Change Footer Copyright and add Additional Links
 - [ ] Change the Login Page to not be eye bleeding blue
 
@@ -35,6 +35,10 @@
     - [ ] Additional Map Data
     - [ ] Leaderboard per Difficulty
     - [ ] Comments
+
+- [ ] Seasons
+    - [ ] List Active Seasons Maps
+    - [ ] Dropdown for Previous Seasons
 
 ## Other Misc. Stuff
 ---
