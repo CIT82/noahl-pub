@@ -1,0 +1,30 @@
+#userInfoPlatform {
+    padding-top: 12px;
+    background-color: #b9ceef;
+}
+
+#playerBanner {
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 286px;
+}
+
+#playerProfilePicture {
+    margin-top: -116px;
+    margin-left: 32px;
+    margin-right: 8px;
+    width: 176px;
+    height: 176px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#playerStats {
+    margin-top: -56px;
+}
+
+#userName {
+    margin-left: 224px;
+    margin-top: -58px;
+}

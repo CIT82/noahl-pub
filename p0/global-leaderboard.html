@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Leaderboards | Friends</title>
+        <title>Leaderboards | Global</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -15,14 +15,8 @@
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand ps-3" href="index.html">Leaderboard Project</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
-            </form>
             <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <ul class="navbar-nav d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -95,747 +89,393 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
-                <main>
-                    <div class="container-fluid px-4">
-                        <h1 class="mt-4">Rankings</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Global</li>
-                        </ol>
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Player Rankings
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple" class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Rank</th>
-                                            <th>Name</th>
-                                            <th>Play Count</th>
-                                            <th>Ranked Score</th>
-                                            <th>Average Accuracy</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table-group-divider">
-                                        <tr>
-                                            <th>#1</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>1,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#2</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>2,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#3</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>3,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#4</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>4,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#5</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>5,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#6</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>6,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#7</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>7,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#8</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>8,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#9</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>9,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#10</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>10,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#11</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>11,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#12</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>12,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#13</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>13,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#14</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>14,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#15</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>15,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#16</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>16,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#17</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>17,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#18</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>18,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#19</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>19,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#20</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>20,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#21</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>21,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#22</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>22,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#23</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>23,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#24</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>24,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#25</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>25,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#26</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>26,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#27</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>27,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#28</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>28,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#29</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>29,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#30</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>30,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#31</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>31,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#32</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>32,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#33</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>33,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#34</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>34,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#35</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>35,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#36</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>36,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#37</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>37,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#38</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>38,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#39</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>39,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#40</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>40,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#41</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>41,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#42</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>42,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#43</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>43,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#44</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>44,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#45</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>45,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#46</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>46,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#47</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>47,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#48</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>48,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#49</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>49,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#50</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>50,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#51</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>51,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#52</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>52,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#53</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>53,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#54</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>54,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#55</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>55,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#56</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>56,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#57</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>57,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#58</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>58,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#59</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>59,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#60</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>60,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#61</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>61,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#62</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>62,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#63</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>63,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#64</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>64,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#65</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>65,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#66</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>66,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#67</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>67,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#68</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>68,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#69</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>69,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#70</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>70,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#71</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>71,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#72</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>72,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#73</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>73,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#74</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>74,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#75</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>75,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#76</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>76,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#77</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>77,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#78</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>78,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#79</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>79,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#80</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>80,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#81</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>81,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#82</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>82,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#83</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>83,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#84</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>84,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#85</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>85,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#86</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>86,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#87</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>87,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#88</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>88,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#89</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>89,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#90</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>90,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#91</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>91,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#92</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>92,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#93</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>93,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#94</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>94,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#95</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>95,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#96</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>96,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#97</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>97,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#98</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>98,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#99</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>99,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                        <tr>
-                                            <th>#100</th>
-                                            <th>PlaceHolder Name</th>
-                                            <th>5,000</th>
-                                            <th>100,000,000</th>
-                                            <th>98.71%</th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                <main class="container-fluid px-4">
+                    <h1 class="mt-4">Rankings</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active">Global</li>
+                    </ol>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Name</th>
+                                        <th>Play Count</th>
+                                        <th>Ranked Score</th>
+                                        <th>Average Accuracy</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th>#1</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>1,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#2</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>2,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#3</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>3,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#4</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>4,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#5</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>5,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#6</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>6,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#7</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>7,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#8</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>8,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#9</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>9,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#10</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>10,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#11</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>11,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#12</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>12,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#13</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>13,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#14</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>14,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#15</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>15,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#16</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>16,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#17</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>17,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#18</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>18,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#19</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>19,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#20</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>20,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#21</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>21,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#22</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>22,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#23</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>23,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#24</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>24,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#25</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>25,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#26</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>26,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#27</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>27,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#28</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>28,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#29</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>29,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#30</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>30,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#31</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>31,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#32</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>32,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#33</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>33,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#34</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>34,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#35</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>35,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#36</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>36,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#37</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>37,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#38</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>38,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#39</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>39,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#40</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>40,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#41</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>41,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#42</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>42,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#43</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>43,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#44</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>44,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#45</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>45,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#46</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>46,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#47</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>47,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#48</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>48,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#49</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>49,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#50</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">PlaceHolder Name</a></th>
+                                        <th>5,000</th>
+                                        <th>50,000,000</th>
+                                        <th>98.71%</th>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </main>
-                <!-- <footer class="py-4 bg-light mt-auto">
+                <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Your Website 2023</div>
                             <div>
+                                <a href="sitemap.html">Sitemap</a>
+                                &middot;
                                 <a href="#">Privacy Policy</a>
                                 &middot;
                                 <a href="#">Terms &amp; Conditions</a>
                             </div>
                         </div>
                     </div>
-                </footer> -->
+                </footer>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

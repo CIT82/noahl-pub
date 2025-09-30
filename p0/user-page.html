@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Tournaments</title>
+        <title>Username's Profile | Leaderboard Project</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/user-page.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
@@ -68,11 +69,11 @@
                             </div>
                             <!-- Community -->
                             <div class="sb-sidenav-menu-heading">Community</div>
-                            <a class="nav-link" href="#.html">
+                            <a class="nav-link" href="tournaments.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-trophy"></i></div>
                                 Tournaments
                             </a>
-                            <a class="nav-link" href="forums.html">
+                            <a class="nav-link" href="#.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-file-lines"></i></div>
                                 Forums
                             </a>
@@ -90,7 +91,37 @@
             </div>
             <div id="layoutSidenav_content">
                 <main class="container-fluid px-4">
-                    
+                    <div class="row mt-3 justify-content-center">
+                        <div class="col-xl-8 rounded" id="userInfoPlatform">
+                            <img src="assets/placeholder/placeholder-banner.png" alt="Profile Banner" class="rounded" id="playerBanner">
+                            <img src="assets/placeholder/placeholder-icon.png" alt="Profile Icon" class="rounded" id="playerProfilePicture">
+                            <h2 class="fw-bold text-decoration-underline" id="userName">Username</h2>
+                            <div class="row mt-3 justify-content-end">
+                                <div class="col-xl-4 col-md-3">
+                                    <table class="table table-borderless" id="playerStats">
+                                        <tbody>
+                                            <tr>
+                                                <th>Score</th>
+                                                <th>1,000,000</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Hit Accuracy</th>
+                                                <th>98.71%</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Play Count</th>
+                                                <th>10,000</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Play Time</th>
+                                                <th>10d 12h</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
