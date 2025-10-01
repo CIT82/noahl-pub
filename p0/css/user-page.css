@@ -21,10 +21,28 @@
 }
 
 #playerStats {
-    margin-top: -56px;
+    margin-top: -48px;
+    background-color: #8eaeef;
 }
 
 #userName {
     margin-left: 224px;
-    margin-top: -58px;
+    margin-top: -56px;
+}
+
+#sectionAboutMe {
+    margin-top: -96px;
+    background-color: #8eaeef;
+}
+
+#recentScores {
+    background-color: #8eaeef;
+}
+
+#difficultyBadge {
+    margin-top: 38px;
+    margin-left: -64px;
+    font-size: 14px;
+    position: absolute;
+    background-color: darkmagenta;
 }

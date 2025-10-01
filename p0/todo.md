@@ -4,6 +4,7 @@
 - [x] Redesign Dashboard and Feature New Maps and such
 - [x] Change Footer Copyright and add Additional Links
 - [ ] Change the Login Page to not be eye bleeding blue
+- [ ] Decide if 'user' should be logged in our logged out
 
 ## User's And Listings
 ---
@@ -16,8 +17,8 @@
 - [x] Add User Pages
     - [ ] Move Area Graph Here
     - [x] Additional User Data
-    - [ ] About Me
-    - [ ] Best/Recent Plays
+    - [x] About Me
+    - [x] Best/Recent Plays
     - [ ] Submitted Maps
 
 - [x] Change Table Layout
@@ -43,12 +44,11 @@
 ## Other Misc. Stuff
 ---
 - [ ] Forums
-- [ ] Wiki Page
+- [x] Wiki Page
     - [ ] Placeholder Wiki Pages
 
-- [ ] Tournament Page
-    - [ ] Badged Tournaments
-    - [ ] Unverified Tournaments
+- [x] Tournament Page
+    - [x] Badged to denote Tournament verification
 
 - [x] Change the "Logged in as" text
 
