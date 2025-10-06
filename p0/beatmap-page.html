@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Beatmap Name Info | Leaderboard Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet"/>
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link href="css/beatmap-page.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="icon/favicon.ico">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand ps-3" href="index.html">Leaderboard Project</a>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar-->
+            <ul class="navbar-nav d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        <li><a class="dropdown-item" href="password.html">Settings</a></li> <!-- Temp -->
+                        <!-- <li><hr class="dropdown-divider"/></li> -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <!-- Core -->
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-house"></i></div>
+                                Home
+                            </a>
+                            <!-- User's and Listings -->
+                            <div class="sb-sidenav-menu-heading">Users and Beatmaps</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseRankings" aria-expanded="false" aria-controls="collapseRankings">
+                                <div class="sb-nav-link-icon"><i class="fas fas fa-ranking-star"></i></div>
+                                Rankings
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseRankings" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <!-- Leaderboards -->
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="global-leaderboard.html">Global Leaderboard</a>
+                                    <a class="nav-link" href="friends-leaderboard.html">Freiends Leaderboard</a>
+                                    <a class="nav-link" href="#.html">Seasons</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseBeatmaps" aria-expanded="false" aria-controls="collapseBeatmaps">
+                                <div class="sb-nav-link-icon"><i class="fas fas fa-music"></i></div>
+                                Beatmaps
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseBeatmaps" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <!-- Beatmaps -->
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="ranked-maps.html">Ranked Beatmaps</a>
+                                    <a class="nav-link" href="recent-maps.html">Recently Submitted</a>
+                                </nav>
+                            </div>
+                            <!-- Community -->
+                            <div class="sb-sidenav-menu-heading">Community</div>
+                            <a class="nav-link" href="tournaments.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-trophy"></i></div>
+                                Tournaments
+                            </a>
+                            <a class="nav-link" href="forums.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-lines"></i></div>
+                                Forums
+                            </a>
+                            <a class="nav-link" href="wiki.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-list-ul"></i></div>
+                                Wiki
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Username
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main class="container-fluid px-4 mt-3">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6"> <!--Leaderboard & Difficulties-->
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Name</th>
+                                        <th>Score</th>
+                                        <th>Combo</th>
+                                        <th>Misses</th>
+                                        <th>Accuracy</th>
+                                        <th>Modifiers</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th>#1</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,250,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.65%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Faster Song"><i class="fa-solid fa-forward-fast"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#2</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,195,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>98.85%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Faster Song"><i class="fa-solid fa-forward-fast"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#3</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,150,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.75%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Faster Song"><i class="fa-solid fa-forward-fast"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#4</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,140,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.5%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Faster Song"><i class="fa-solid fa-forward-fast"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#5</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,130,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>98.8%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Faster Song"><i class="fa-solid fa-forward-fast"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#6</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,120,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.85%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#7</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,080,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>100%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#8</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,075,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>98.4%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Faster Song"><i class="fa-solid fa-forward-fast"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#9</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>1,020,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.4%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#10</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>990,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.95%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#11</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>985,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#12</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>954,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>98.6%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#13</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>950,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>98.8%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#14</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>945,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.2%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#15</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>930,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>98.7%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#16</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>915,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99.5%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#17</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>900,000</th>
+                                        <th>2,163</th>
+                                        <th>1x</th>
+                                        <th>99.75%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#18</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>895,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>99%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#19</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>880,000</th>
+                                        <th>2,004</th>
+                                        <th>2x</th>
+                                        <th>99.75%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#20</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>875,000</th>
+                                        <th>1,886</th>
+                                        <th>1x</th>
+                                        <th>98.45%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#21</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>860,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>98.15%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#22</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>855,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>97.95%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Hidden"><i class="fa-solid fa-eye-low-vision"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#23</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>840,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>96.5%</th>
+                                        <th>
+                                            <div class="badge bg-danger fw-bold fs-6" id="modifier" title="Modifier | Pro Mode"><i class="fa-solid fa-hand-fist"></i></div>
+                                        </th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#24</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>815,000</th>
+                                        <th>2,484</th>
+                                        <th>0x</th>
+                                        <th>97.15%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#25</th>
+                                        <th><a href="user-page.html" style="text-decoration: none;">Username</a></th>
+                                        <th>800,000</th>
+                                        <th>1,727</th>
+                                        <th>2x</th>
+                                        <th>98.85%</th>
+                                        <th></th>
+                                        <th title="October 22nd, 2025 | 12:00:00 UTC-7">2w</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-xl-6"> <!--Map Stats-->
+                            <div class="card bg-dark text-white">
+                                <img src="assets/placeholder/placeholder-background.png" class="card-img" style="filter: blur(4px)">
+                                <div class="card-img-overlay">
+                                    <div class="row">
+                                        <div class="col-xl-6"> <!--Song Info-->
+                                            <h1 id="cardText" class="fw-bold">Song Name<span class="fs-5"> by Artist Name<span></h1>
+                                            <div class="map-token"></div>
+                                            <div class="map-token"></div>
+                                            <div class="map-token"></div>
+                                            <div class="map-token"></div>
+                                            <div class="map-token selected"></div>
+                                            <h4 id="cardText" class="fw-bold">Difficulty Name<span class="fs-6"> by Mapper Name</span></h4>
+
+                                            <a href="user-page.html"><img src="assets/placeholder/placeholder-icon.png" class="rounded block mt-3 float-left" style="width: 7rem;"></a>
+                                            <div class="mt-4 fw-bold">
+                                                <p id="cardText" style="margin-left: 120px;">Submitted by 
+                                                    <a href="user-page.html" style="color: white;">Beatmap Submitter</a>
+                                                </p>
+                                                <p id="cardText" style="margin-left: 120px;">Submitted 4th Aug, 2025</p>
+                                                <p id="cardText" style="margin-left: 120px;">Ranked 6th Oct, 2025</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6"> <!--Map Info-->
+                                            <h2><div class="badge bg-success float-right mb-3">Ranked</div></h2>
+                                            <table class="table table-borderless rounded text-white" id="mapStats">
+                                                <tbody>
+                                                    <tr>
+                                                        <th id="cardText" class="text-njs">NJS</th>
+                                                        <th id="cardText" class="text-njs">21.5 NJS</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 93.47%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th id="cardText" class="text-angle">Angle Leniency</th>
+                                                        <th id="cardText" class="text-angle">42.5°</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 58.33%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th id="cardText" class="text-difficulty">Difficulty Rating</th>
+                                                        <th id="cardText" class="text-difficulty">6.78★</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 67.8%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-xl-12"> <!--Map Description-->
+                                            <!--I'll probably only add this if I have time, otherwise there isn't any point right now-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12"> <!--Comments-->
+                            <!--I'll probably only add this if I have time, otherwise there isn't any point right now-->
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                            <div>
+                                <a href="sitemap.html">Sitemap</a>
+                                &middot;
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>

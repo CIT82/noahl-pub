@@ -4,7 +4,7 @@
 - [x] Redesign Dashboard and Feature New Maps and such
 - [x] Change Footer Copyright and add Additional Links
 - [ ] Change the Login Page to not be eye bleeding blue
-- [ ] Decide if 'user' should be logged in our logged out
+- [ ] Redesign the Dashboard so it doesn't look so bland
 
 ## User's And Listings
 ---
@@ -31,19 +31,20 @@
 - [x] Add Search Bar for Maps
 - [ ] Add Page to Upload Maps
 
-- [ ] Add Map Pages
-    - [ ] Difficulty Sets
-    - [ ] Additional Map Data
-    - [ ] Leaderboard per Difficulty
+- [x] Add Map Pages
+    - [x] Difficulty Sets
+    - [x] Additional Map Data
     - [ ] Comments
 
-- [ ] Seasons
-    - [ ] List Active Seasons Maps
-    - [ ] Dropdown for Previous Seasons
+- [x] Seasons
+    - [x] List Active Seasons Maps
+    - [x] Dropdown for Previous Seasons
+    - [ ] Page that lists Beatmaps for listed season
 
 ## Other Misc. Stuff
 ---
-- [ ] Forums
+- [x] Forums
+    - [ ] Example/Placeholder Forum Page
 - [x] Wiki Page
     - [ ] Placeholder Wiki Pages
 
@@ -58,3 +59,4 @@
     - [ ] Everything Else
 
 This isn't a checklist thing but I'm putting this here to remind myself to do something with the cards if possible.
+^ I did this, a lot actually
