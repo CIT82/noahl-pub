@@ -3,7 +3,9 @@
 - [x] Create Placeholder Data for Pages
 - [x] Redesign Dashboard and Feature New Maps and such
 - [x] Change Footer Copyright and add Additional Links
-- [ ] Change the Login Page to not be eye bleeding blue
+- [ ] Change the Login Page to fit with everything else
+- [ ] Change Account to logged out
+- [ ] Use Login Page when selecting 'Sign Out' Option
 - [ ] Redesign the Dashboard so it doesn't look so bland
 
 ## User's And Listings
@@ -15,7 +17,6 @@
     - [ ] Sign Out
 
 - [x] Add User Pages
-    - [ ] Move Area Graph Here
     - [x] Additional User Data
     - [x] About Me
     - [x] Best/Recent Plays
@@ -34,29 +35,30 @@
 - [x] Add Map Pages
     - [x] Difficulty Sets
     - [x] Additional Map Data
-    - [ ] Comments
+    - [ ] Map Description
 
 - [x] Seasons
     - [x] List Active Seasons Maps
     - [x] Dropdown for Previous Seasons
-    - [ ] Page that lists Beatmaps for listed season
+    - [x] Page that lists Beatmaps for listed season
 
 ## Other Misc. Stuff
 ---
 - [x] Forums
-    - [ ] Example/Placeholder Forum Page
+    - [x] Example/Placeholder Forum Page
 - [x] Wiki Page
-    - [ ] Placeholder Wiki Pages
+    - [ ] Placeholder Wiki Page
 
 - [x] Tournament Page
     - [x] Badged to denote Tournament verification
+    - [ ] Placeholder Tournament Page
 
 - [x] Change the "Logged in as" text
 
-- [ ] Make Sure Pages are Titled Properly
+- [x] Make Sure Pages are Titled Properly
     - [x] User Pages
     - [x] Map Pages
-    - [ ] Everything Else
+    - [x] Everything Else
 
 This isn't a checklist thing but I'm putting this here to remind myself to do something with the cards if possible.
 ^ I did this, a lot actually
