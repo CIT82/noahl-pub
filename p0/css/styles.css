@@ -11253,3 +11253,11 @@ body {
 a {
   color: lightblue;
 }
+
+.linkDark {
+  color: #0020A8;
+}
+
+.linkDark:hover {
+  color: #1060D8;
+}

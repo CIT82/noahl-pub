@@ -3,18 +3,18 @@
 - [x] Create Placeholder Data for Pages
 - [x] Redesign Dashboard and Feature New Maps and such
 - [x] Change Footer Copyright and add Additional Links
-- [ ] Change the Login Page to fit with everything else
-- [ ] Change Account to logged out
-- [ ] Use Login Page when selecting 'Sign Out' Option
+- [x] Change the Login Page to fit with everything else
+- [x] Change Account to 'logged in'
+- [x] Use Login Page when selecting 'Sign Out' Option
 - [ ] Redesign the Dashboard so it doesn't look so bland
 
 ## User's And Listings
 ---
-- [ ] Add More User Options
-    - [ ] My Profile
+- [x] Add More User Options
+    - [x] My Profile
     - [ ] Friends
-    - [x] Settings
-    - [ ] Sign Out
+    - [ ] Settings
+    - [x] Sign Out
 
 - [x] Add User Pages
     - [x] Additional User Data
@@ -47,7 +47,7 @@
 - [x] Forums
     - [x] Example/Placeholder Forum Page
 - [x] Wiki Page
-    - [ ] Placeholder Wiki Page
+    - [x] Placeholder Wiki Page
 
 - [x] Tournament Page
     - [x] Badged to denote Tournament verification
