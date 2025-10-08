@@ -6,7 +6,7 @@
 - [x] Change the Login Page to fit with everything else
 - [x] Change Account to 'logged in'
 - [x] Use Login Page when selecting 'Sign Out' Option
-- [ ] Redesign the Dashboard so it doesn't look so bland
+- [x] Redesign the Dashboard so it doesn't look so bland
 
 ## User's And Listings
 ---

@@ -11261,3 +11261,11 @@ a {
 .linkDark:hover {
   color: #1060D8;
 }
+
+.linkLight {
+  color: #FFF8B1;
+}
+
+.linkLight:hover {
+  color: #EFAD1F;
+}
